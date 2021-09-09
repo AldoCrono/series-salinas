@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="20dp">
+
+
+<androidx.cardview.widget.CardView
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="30dp"
+    app:cardCornerRadius="5dp">
+
+    <RelativeLayout
+        android:id="@+id/rl_movie"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="@color/black">
+
+        <View
+            android:id="@+id/centro"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/lb_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/centro"
+            android:layout_marginLeft="-50dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:lines="1"/>
+
+        <TextView
+            android:id="@+id/lb_average"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.0"
+            android:textColor="@color/yellow"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/centro"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="2dp"
+            android:layout_below="@id/lb_title"
+
+            android:lines="1"/>
+
+        <RatingBar
+            android:id="@+id/rating_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_below="@id/lb_title"
+            android:isIndicator="true"
+            android:layout_marginTop="2dp"
+            android:max="5"
+            android:scaleX=".5"
+            android:scaleY=".5"
+            android:transformPivotX="130dp"
+            android:layout_centerHorizontal="true"
+            android:theme="@style/RatingBar"
+            > </RatingBar>
+
+        <TextView
+            android:id="@+id/lb_release"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Release date:"
+            android:textColor="@color/grey"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/centro"
+            android:layout_marginLeft="-50dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/lb_average"
+
+            android:lines="1"/>
+
+
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+
+        android:layout_width="100dp"
+        android:layout_height="200dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        app:cardCornerRadius="5dp">
+
+        <ImageView
+            android:id="@+id/poster"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"/>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>
