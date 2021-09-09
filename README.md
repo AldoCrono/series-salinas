@@ -1,5 +1,7 @@
 Series Salinas
 
+La parte offline de la app ocurre despues de haber descargado por primera vez algunos registros del API proporcionado.
+
 Dentro de las cosas que hubiera querido agregar son:
 
 *Un Slider para los videos de cada película en lugar de un RecyclerView.
